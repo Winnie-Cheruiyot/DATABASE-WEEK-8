@@ -1,5 +1,66 @@
-# DATABASE-WEEK-8
-# Student Portal
+# DATABASE-WEEK-8 
+
+# Student and Clinic Projects Repository
+
+This repository contains two independent projects:
+
+## 1. Clinic Booking System (SQL only)
+Located in: `/clinic-booking-system/clinicbooking.sql`
+
+A MySQL script to create and populate a clinic booking database with tables such as patients, doctors, appointments, etc.
+
+## 2. Student Portal (FastAPI + SQLAlchemy)
+Located in: `/student-portal/`
+
+A FastAPI project that manages students, courses, enrollments, and grades. It includes:
+- SQLAlchemy models
+- RESTful API endpoints
+- Database connection to MySQL
+
+# Q1
+# 🏥 Clinic Booking System
+
+A Clinic Booking System built with MySQL and optionally powered by FastAPI for backend services. It allows patients to book appointments with doctors, track treatments, and manage clinic operations.
+
+---
+
+## 📚 Features
+
+- 🧑‍⚕️ Manage doctors and their availability
+- 👨‍⚕️ Register and manage patient records
+- 📅 Book, cancel, and complete appointments
+- 💊 Record treatments and billing
+- ⏱️ Automatic tracking of creation and update times
+
+---
+
+## 🗃️ Database Schema
+
+### 📌 Tables
+
+#### 1. `patients`
+Stores patient details.
+```sql
+id (PK), first_name, last_name, email (unique), phone_number, date_of_birth, gender, address, created_at, updated_at
+🚀 Getting Started
+1. Clone the Repository
+git clone https://github.com/your-username/clinic-booking-system.git
+cd clinic-booking-system
+
+2. Set Up MySQL Database
+CREATE DATABASE clinic_booking;
+USE clinic_booking;
+-- Then run the SQL schema file
+SOURCe clinicbooking.sql;
+
+3. ✍️ Author
+Developed by Winnie
+Feel free to contribute or fork the project!
+
+
+
+
+# Q2 Student Portal
 
 A comprehensive web application for students to manage their academic journey, built with React, TypeScript, FastAPI, and MySQL.
 
